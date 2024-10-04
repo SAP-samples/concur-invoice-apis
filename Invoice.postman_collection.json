@@ -2,28 +2,29 @@
 	"info": {
 		"_postman_id": "d9ecfc99-c6de-40d2-9286-cff3bc6d03c6",
 		"name": "Invoice",
+		"description": "This collection is intended to provide an overview of working with SAP Concur invoice APIs. For complete documentation, please refer to the API Reference section on the SAP Concur Developer Center here: [https://developer.concur.com/api-reference/](https://developer.concur.com/api-reference/)\n\nThis is intended to be used with the Concur Default Environment which can be found here: [https://github.com/SAP-samples/concur-web-services-authentication](https://github.com/SAP-samples/concur-web-services-authentication)\n\nFor a detailed primer on getting started with SAP Concur client web services, including how to create application credentials and retrieve access tokens, please see this blog post: [https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/introduction-to-web-services-for-concur-expense-authentication/ba-p/13554400](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/introduction-to-web-services-for-concur-expense-authentication/ba-p/13554400)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "34128714",
-		"_collection_link": "https://sap-se.postman.co/workspace/Concur---NA-ENT-Technical-Consu~e78c414c-b997-45b4-8c48-ba0d1979f2ae/collection/34128714-d9ecfc99-c6de-40d2-9286-cff3bc6d03c6?action=share&source=collection_link&creator=34128714"
+		"_collection_link": "https://sap-se.postman.co/workspace/SAP-Concur-Client-Web-Servies~e78c414c-b997-45b4-8c48-ba0d1979f2ae/collection/34128714-d9ecfc99-c6de-40d2-9286-cff3bc6d03c6?action=share&source=collection_link&creator=34128714"
 	},
 	"item": [
 		{
 			"name": "Vendor",
 			"item": [
 				{
-					"name": "Create Vendor",
+					"name": "Create / Update Vendor",
 					"request": {
 						"method": "PUT",
 						"header": [
 							{
 								"key": "Concur-CorrelationId",
-								"value": "t1200339lpr6-vendor-json-v3",
+								"value": "{{$randomUUID}}",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Vendor\": [\r\n        {\r\n            \"VendorCode\": \"VEN007893\",\r\n            \"VendorName\": \"Test API Create\",\r\n            \"AddressCode\": \"ADDR01\",\r\n            \"Address1\": \"456 Sesame St\",\r\n            \"Address2\": \"\",\r\n            \"Address3\": \"\",\r\n            \"City\": \"New York\",\r\n            \"State\": \"NY\",\r\n            \"PostalCode\": \"10005\",\r\n            \"CountryCode\": \"US\",\r\n            \"Country\": \"UNITED STATES\",\r\n            \"Approved\": true,\r\n            \"PaymentTerms\": \"30\",\r\n            \"CurrencyCode\": \"USD\",\r\n            \"ContactEmail\": \"john.doe@test.com\",\r\n            \"ContactFirstName\": \"John\",\r\n            \"ContactLastName\": \"Doe\",\r\n            \"ContactPhoneNumber\": \"(123) 456-7890\",\r\n            \"DefaultExpenseTypeName\": \"Office Supplies\",\r\n            \"Custom1\": \"BU2\",\r\n            \"Custom2\": \"CC1\",\r\n            \"PaymentMethodType\": \"CLIENT\",\r\n            \"Custom3\": \"\",\r\n            \"Custom4\": \"\",\r\n            \"Custom5\": \"\",\r\n            \"Custom6\": \"\",\r\n            \"Custom7\": \"\",\r\n            \"Custom8\": \"\",\r\n            \"Custom9\": \"\",\r\n            \"Custom10\": \"\",\r\n            \"Custom11\": \"\",\r\n            \"Custom12\": \"\",\r\n            \"Custom13\": \"\",\r\n            \"Custom14\": \"\",\r\n            \"Custom15\": \"\",\r\n            \"Custom16\": \"\",\r\n            \"Custom17\": \"\",\r\n            \"Custom18\": \"\",\r\n            \"Custom19\": \"\",\r\n            \"Custom20\": \"\",\r\n            \"DefaultEmployeeID\": \"traveler\",\r\n            \"DiscountPercentage\": \"10\",\r\n            \"DiscountTermsDays\": \"15\",\r\n            \"PaymentTerms\": \"35\",\r\n            \"ProvincialTaxID\": \"64500\",\r\n            \"PurchaseOrderContactEmail\": \"POContact@example.com\",\r\n            \"PurchaseOrderContactFirstName\": \"Example\",\r\n            \"PurchaseOrderContactLastName\": \"Contact\",\r\n            \"PurchaseOrderContactPhoneNumber\": \"123-456-7890\",\r\n            \"ShippingMethod\": \"USPSSTNDR\",\r\n            \"ShippingTerms\": \"FOB\",\r\n            \"StatusList\": \"\",\r\n            \"TaxID\": \"\",\r\n            \"TaxType\": \"\",\r\n            \"URI\": \"\",\r\n            \"VoucherNotes\": \"\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"Vendor\": [\r\n        {\r\n            \"VendorCode\": \"VEN007893\",\r\n            \"VendorName\": \"Test API Create\",\r\n            \"AddressCode\": \"ADDR01\",\r\n            \"Address1\": \"456 Sesame St\",\r\n            \"Address2\": \"\",\r\n            \"Address3\": \"\",\r\n            \"City\": \"New York\",\r\n            \"State\": \"NY\",\r\n            \"PostalCode\": \"10005\",\r\n            \"CountryCode\": \"US\",\r\n            \"Country\": \"UNITED STATES\",\r\n            \"Approved\": true,\r\n            \"PaymentTerms\": \"30\",\r\n            \"CurrencyCode\": \"USD\",\r\n            \"ContactEmail\": \"john.doe@test.com\",\r\n            \"ContactFirstName\": \"John\",\r\n            \"ContactLastName\": \"Doe\",\r\n            \"ContactPhoneNumber\": \"(123) 456-7890\",\r\n            \"DefaultExpenseTypeName\": \"Office Supplies\",\r\n            \"Custom1\": \"BU2\",\r\n            \"Custom2\": \"CC1\",\r\n            \"PaymentMethodType\": \"CLIENT\",\r\n            \"Custom3\": \"\",\r\n            \"Custom4\": \"\",\r\n            \"Custom5\": \"\",\r\n            \"Custom6\": \"\",\r\n            \"Custom7\": \"\",\r\n            \"Custom8\": \"\",\r\n            \"Custom9\": \"\",\r\n            \"Custom10\": \"\",\r\n            \"Custom11\": \"\",\r\n            \"Custom12\": \"\",\r\n            \"Custom13\": \"\",\r\n            \"Custom14\": \"\",\r\n            \"Custom15\": \"\",\r\n            \"Custom16\": \"\",\r\n            \"Custom17\": \"\",\r\n            \"Custom18\": \"\",\r\n            \"Custom19\": \"\",\r\n            \"Custom20\": \"\",\r\n            \"DefaultEmployeeID\": \"traveler\",\r\n            \"DiscountPercentage\": \"10\",\r\n            \"DiscountTermsDays\": \"15\",\r\n            \"ProvincialTaxID\": \"64500\",\r\n            \"PurchaseOrderContactEmail\": \"POContact@example.com\",\r\n            \"PurchaseOrderContactFirstName\": \"Example\",\r\n            \"PurchaseOrderContactLastName\": \"Contact\",\r\n            \"PurchaseOrderContactPhoneNumber\": \"123-456-7890\",\r\n            \"ShippingMethod\": \"USPSSTNDR\",\r\n            \"ShippingTerms\": \"FOB\",\r\n            \"StatusList\": \"\",\r\n            \"TaxID\": \"\",\r\n            \"TaxType\": \"\",\r\n            \"URI\": \"\",\r\n            \"VoucherNotes\": \"\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -43,7 +44,7 @@
 								"vendors"
 							]
 						},
-						"description": "Used to create a new vendor. Complete documentation here: [https://developer.concur.com/api-reference/invoice/v3.1.vendor.html](https://developer.concur.com/api-reference/invoice/v3.1.vendor.html)\n\nEndFragment"
+						"description": "Used to create a new vendor.\n\n| Name | Type | Format | Description |\n| --- | --- | --- | --- |\n| `AccountNumber` | `string` | \\- | The Buyer Account Number. |\n| `Address1` | `string` | \\- | The Vendor Address 1. |\n| `Address2` | `string` | \\- | The Vendor Address 2. |\n| `Address3` | `string` | \\- | The Vendor Address 3. |\n| `AddressCode` | `string` | \\- | **Required** The Address Code. |\n| `AddressImportSyncID` | `string` | \\- | This ID is originally generated by Invoice when an employee requests a new vendor. The Employee Request Vendor Extract provides this value to positively identify the vendor address record when reimporting vendor from the client’s system of record for the Vendor Master List. |\n| `Approved` | `string` | \\- | Vendor Approval Status. |\n| `City` | `string` | \\- | The Vendor City. |\n| `ContactEmail` | `string` | \\- | The Vendor Contact Email. |\n| `ContactFirstName` | `string` | \\- | The Vendor Contact First Name. |\n| `ContactLastName` | `string` | \\- | The Vendor Contact Last Name. |\n| `ContactPhoneNumber` | `string` | \\- | The Vendor Contact Phone Number. |\n| `Country` | `string` | \\- | The Vendor Country. |\n| `CountryCode` | `string` | \\- | **Required** The Vendor Country Code. |\n| `CurrencyCode` | `string` | \\- | **Required** The Vendor Currency Code. |\n| `Custom1` | `string` | \\- | A value that can be applied to a custom field 1 that is part of the vendor form. |\n| `Custom2` | `string` | \\- | A value that can be applied to a custom field 2 that is part of the vendor form. |\n| `Custom3` | `string` | \\- | A value that can be applied to a custom field 3 that is part of the vendor form. |\n| `Custom4` | `string` | \\- | A value that can be applied to a custom field 4 that is part of the vendor form. |\n| `Custom5` | `string` | \\- | A value that can be applied to a custom field 5 that is part of the vendor form. |\n| `Custom6` | `string` | \\- | A value that can be applied to a custom field 6 that is part of the vendor form. |\n| `Custom7` | `string` | \\- | A value that can be applied to a custom field 7 that is part of the vendor form. |\n| `Custom8` | `string` | \\- | A value that can be applied to a custom field 8 that is part of the vendor form. |\n| `Custom9` | `string` | \\- | A value that can be applied to a custom field 9 that is part of the vendor form. |\n| `Custom10` | `string` | \\- | A value that can be applied to a custom field 10 that is part of the vendor form. |\n| `Custom11` | `string` | \\- | A value that can be applied to a custom field 11 that is part of the vendor form. |\n| `Custom12` | `string` | \\- | A value that can be applied to a custom field 12 that is part of the vendor form. |\n| `Custom13` | `string` | \\- | A value that can be applied to a custom field 13 that is part of the vendor form. |\n| `Custom14` | `string` | \\- | A value that can be applied to a custom field 14 that is part of the vendor form. |\n| `Custom15` | `string` | \\- | A value that can be applied to a custom field 15 that is part of the vendor form. |\n| `Custom16` | `string` | \\- | A value that can be applied to a custom field 16 that is part of the vendor form. |\n| `Custom17` | `string` | \\- | A value that can be applied to a custom field 17 that is part of the vendor form. |\n| `Custom18` | `string` | \\- | A value that can be applied to a custom field 18 that is part of the vendor form. |\n| `Custom19` | `string` | \\- | A value that can be applied to a custom field 19 that is part of the vendor form. |\n| `Custom20` | `string` | \\- | A value that can be applied to a custom field 20 that is part of the vendor form. |\n| `DefaultEmployeeID` | `string` | \\- | The Default Employee ID of the employee connected to the vendor. |\n| `DefaultExpenseTypeName` | `string` | \\- | The Default Expense Type tied to the vendor. |\n| `DiscountPercentage` | `string` | \\- | The Discount Percentage. |\n| `DiscountTermsDays` | `string` | \\- | The Vendor Discount Terms Days. |\n| `ID` | `string` | \\- | The unique identifier of the resource. |\n| `IsLineItemVatIncld` | `string` | \\- | Line item Unit Price Contains VAT , |\n| `IsVisibleForContentExtraction` | `string` | \\- | Flag that indicates if the vendor will be available for OCR within Brainware. |\n| `PaymentMethodType` | `string` | \\- | Preferred Payment Type for Vendor. |\n| `PaymentTerms` | `Integer between 1 and 999` | \\- | The Vendor Payment Terms. This field represents the number of days by which a payment must be made, for example, 30 days. |\n| `PostalCode` | `string` | \\- | The Vendor Postal Code / Zip. |\n| `ProvincialTaxID` | `string` | \\- | The Vendor Provincial Tax ID. Note that this value is not encrypted at REST. |\n| `PurchaseOrderContactEmail` | `string` | \\- | The Purchase Order Contact Email. |\n| `PurchaseOrderContactFirstName` | `string` | \\- | The Purchase Order Contact First Name. |\n| `PurchaseOrderContactLastName` | `string` | \\- | The Purchase Order Contact Last Name. |\n| `PurchaseOrderContactPhoneNumber` | `string` | \\- | The Purchase Order Contact Phone Number. |\n| `ShippingMethod` | `string` | \\- | The Vendor Shipping Method. |\n| `ShippingTerms` | `string` | \\- | The Vendor Shipping Terms. |\n| `State` | `string` | \\- | The Vendor State. The State fields are now required if the selected vendor is in a country that by definition requires the state or region to be populated due to the [SAP Export Control and Sanctions Compliance Policy](https://www.sap.com/about/agreements/export-statements.html). If a country is not completely embargoed the State field will be required, and the field value validated against the embargoed states. If the selected vendor is from a non-embargoed country, then the State field is not mandatory. |\n| `StatusList` | `array` | [<code>Status</code>](https://developer.concur.com/api-reference/invoice/v3.1.vendor.html#status) | **Required** Status results |\n| `TaxID` | `string` | \\- | The Vendor Tax ID. Note that this value is not encrypted at REST. |\n| `TaxType` | `string` | \\- | The Vendor Tax Type. |\n| `URI` | `string` | \\- | The URI to the resource. |\n| `VendorBankList` | `array` | [<code>VendorBank</code>](https://developer.concur.com/api-reference/invoice/v3.1.vendor.html#VendorBank) | The list of a vendor’s active banking information. **Read-Only** |\n| `VendorCode` | `string` | \\- | **Required** The vendor code of the request. |\n| `VendorFormName` | `string` | \\- | The vendor form name this vendor is associated with. |\n| `VendorGroupList` | `array` | \\- | The list of vendor groups by name. **Read-Only** |\n| `VendorName` | `string` | \\- | The name of the vendor. |\n| `VoucherNotes` | `string` | \\- | Notes sent to Vendor along with authorization to charge Card Voucher. |"
 					},
 					"response": []
 				},
@@ -59,10 +60,15 @@
 								"key": "Accept",
 								"value": "application/json",
 								"type": "text"
+							},
+							{
+								"key": "Concur-CorrelationId",
+								"value": "{{$randomUUID}}",
+								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.1/invoice/vendors?vendorCode=VEN007893",
+							"raw": "https://{{dataCenterURI}}/api/v3.1/invoice/vendors?approved=false",
 							"protocol": "https",
 							"host": [
 								"{{dataCenterURI}}"
@@ -77,7 +83,8 @@
 								{
 									"key": "vendorCode",
 									"value": "VEN007893",
-									"description": "Vendor Code to be searched."
+									"description": "Vendor Code to be searched.",
+									"disabled": true
 								},
 								{
 									"key": "vendorName",
@@ -123,69 +130,18 @@
 								},
 								{
 									"key": "postalCode",
-									"value": null,
+									"value": "",
 									"description": "Postal Code to be searched.",
 									"disabled": true
+								},
+								{
+									"key": "approved",
+									"value": "false",
+									"description": "true or false"
 								}
 							]
 						},
 						"description": "[SAP Concur Developer Center | Vendor v3](https://developer.concur.com/api-reference/invoice/v3.vendor.html#retrieve-an-existing-vendor-)"
-					},
-					"response": []
-				},
-				{
-					"name": "Update Existing Vendor",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"exec": [
-									" "
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Concur-CorrelationId",
-								"value": "t1200339lpr6-Vendor",
-								"type": "text"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text",
-								"disabled": true
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"Vendor\": [\r\n        {\r\n            \"VendorCode\": \"VEN00792\",\r\n            \"VendorName\": \"Test API Create\",\r\n            \"AddressCode\": \"ADDR01\",\r\n            \"Address1\": \"123 Sesame St\",\r\n            \"Address2\": \"\",\r\n            \"Address3\": \"\",\r\n            \"City\": \"New York\",\r\n            \"State\": \"NY\",\r\n            \"PostalCode\": \"10005\",\r\n            \"CountryCode\": \"US\",\r\n            \"Country\": \"UNITED STATES\",\r\n            \"Approved\": true,\r\n            \"PaymentTerms\": \"30\",\r\n            \"CurrencyCode\": \"USD\",\r\n            \"ContactEmail\": \"john.doe@test.com\",\r\n            \"ContactFirstName\": \"John\",\r\n            \"ContactLastName\": \"Doe\",\r\n            \"ContactPhoneNumber\": \"(123) 456-7890\",\r\n            \"DefaultExpenseTypeName\": \"Office Supplies\",\r\n            \"Custom1\": \"\",\r\n            \"Custom2\": \"\",\r\n            \"PaymentMethodType\": \"CLIENT\",\r\n            \"Custom3\": \"\",\r\n            \"Custom4\": \"\",\r\n            \"Custom5\": \"\",\r\n            \"Custom6\": \"\",\r\n            \"Custom7\": \"\",\r\n            \"Custom8\": \"\",\r\n            \"Custom9\": \"\",\r\n            \"Custom10\": \"\",\r\n            \"Custom11\": \"\",\r\n            \"Custom12\": \"\",\r\n            \"Custom13\": \"\",\r\n            \"Custom14\": \"\",\r\n            \"Custom15\": \"\",\r\n            \"Custom16\": \"\",\r\n            \"Custom17\": \"\",\r\n            \"Custom18\": \"\",\r\n            \"Custom19\": \"\",\r\n            \"Custom20\": \"\",\r\n            \"DefaultEmployeeID\": \"traveler\",\r\n            \"DiscountPercentage\": \"10\",\r\n            \"DiscountTermsDays\": \"15\",\r\n            \"PaymentTerms\": \"35\",\r\n            \"ProvincialTaxID\": \"64500\",\r\n            \"PurchaseOrderContactEmail\": \"POContact@example.com\",\r\n            \"PurchaseOrderContactFirstName\": \"Example\",\r\n            \"PurchaseOrderContactLastName\": \"Contact\",\r\n            \"PurchaseOrderContactPhoneNumber\": \"123-456-7890\",\r\n            \"ShippingMethod\": \"USPSSTNDR\",\r\n            \"ShippingTerms\": \"FOB\",\r\n            \"StatusList\": \"\",\r\n            \"TaxID\": \"\",\r\n            \"TaxType\": \"\",\r\n            \"URI\": \"\",\r\n            \"VoucherNotes\": \"\"\r\n        }\r\n    ]\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.1/invoice/vendors",
-							"protocol": "https",
-							"host": [
-								"{{dataCenterURI}}"
-							],
-							"path": [
-								"api",
-								"v3.1",
-								"invoice",
-								"vendors"
-							]
-						}
 					},
 					"response": []
 				},
@@ -201,7 +157,7 @@
 						"header": [
 							{
 								"key": "Concur-CorrelationId",
-								"value": "p0018113elmf-VendorGroup-JSON",
+								"value": "{{$randomUUID}}",
 								"type": "text"
 							},
 							{
@@ -212,7 +168,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"vendorGroup\": [\r\n        {\r\n            \"Name\": \"US Vendors\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"vendorGroup\": [\r\n        {\r\n            \"Name\": \"Business Unit 1\"\r\n        },\r\n        {\r\n            \"Name\": \"Business Unit 2\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -220,7 +176,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.1/invoice/vendor/groups?vendorCode=V00002&addressCode=V00002-1",
+							"raw": "https://{{dataCenterURI}}/api/v3.1/invoice/vendor/groups?vendorCode=VEN_ACME&addressCode=ADDR01",
 							"protocol": "https",
 							"host": [
 								"{{dataCenterURI}}"
@@ -235,18 +191,13 @@
 							"query": [
 								{
 									"key": "vendorCode",
-									"value": "V00002",
+									"value": "VEN_ACME",
 									"description": "REQUIRED The vendor code of the vendor to update."
 								},
 								{
 									"key": "addressCode",
-									"value": "V00002-1",
+									"value": "ADDR01",
 									"description": "REQUIRED The address code of the vendor to update"
-								},
-								{
-									"key": "groupName",
-									"value": "Business Unit 1",
-									"disabled": true
 								}
 							]
 						}
@@ -257,9 +208,15 @@
 					"name": "Delete Vendor Group",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.1/invoice/vendor/groups?vendorCode=V00002&addressCode=V00002-1&groupName=US Vendors",
+							"raw": "https://{{dataCenterURI}}/api/v3.1/invoice/vendor/groups?vendorCode=VEN_ACME&addressCode=ADDR01&groupName=Business Unit 1",
 							"protocol": "https",
 							"host": [
 								"{{dataCenterURI}}"
@@ -274,15 +231,15 @@
 							"query": [
 								{
 									"key": "vendorCode",
-									"value": "V00002"
+									"value": "VEN_ACME"
 								},
 								{
 									"key": "addressCode",
-									"value": "V00002-1"
+									"value": "ADDR01"
 								},
 								{
 									"key": "groupName",
-									"value": "US Vendors"
+									"value": "Business Unit 1"
 								}
 							]
 						}
@@ -301,7 +258,7 @@
 						"header": [
 							{
 								"key": "Concur-CorrelationId",
-								"value": "p0018113elmf-VendorGroup",
+								"value": "{{$randomUUID}}",
 								"type": "text"
 							},
 							{
@@ -312,7 +269,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"VendorBank\": [\r\n        {\r\n            \"VendorCode\": \"V00002\",\r\n            \"AddressCode\": \"V00002-1\",\r\n            \"CurrencyAlphaCode\": \"USD\",\r\n            \"CountryCode\": \"US\",\r\n            \"TransType\": \"ACH\",\r\n            \"AccountType\": \"CHCK\",\r\n            \"IsActive\": \"Y\",\r\n            \"NameOnAccount\": \"Test Vendor Update v2\",\r\n            \"AccountNumber\": \"1234567894\",\r\n            \"RoutingNumber\": \"071000013\",\r\n            \"BankName\": \"Chase\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"VendorBank\": [\r\n        {\r\n            \"VendorCode\": \"VEN_ACME\",\r\n            \"AddressCode\": \"ADDR01\",\r\n            \"CurrencyAlphaCode\": \"USD\",\r\n            \"CountryCode\": \"US\",\r\n            \"TransType\": \"ACH\",\r\n            \"AccountType\": \"CHCK\",\r\n            \"IsActive\": \"Y\",\r\n            \"NameOnAccount\": \"Bugs Bunny\",\r\n            \"AccountNumber\": \"1234567894\",\r\n            \"RoutingNumber\": \"071000013\",\r\n            \"BankName\": \"Chase\",\r\n            \"BranchCode\": \"\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -340,9 +297,15 @@
 					"name": "Delete Vendor",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.1/invoice/vendors?vendorCode=VEN0003&addressCode=ADDR02",
+							"raw": "https://{{dataCenterURI}}/api/v3.1/invoice/vendors?vendorCode=VEN00105&addressCode=ADDR001",
 							"protocol": "https",
 							"host": [
 								"{{dataCenterURI}}"
@@ -356,18 +319,19 @@
 							"query": [
 								{
 									"key": "vendorCode",
-									"value": "VEN0003"
+									"value": "VEN00105"
 								},
 								{
 									"key": "addressCode",
-									"value": "ADDR02"
+									"value": "ADDR001"
 								}
 							]
 						}
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "This provides an overview of managing vendors. The complete documentation can be found here: [https://developer.concur.com/api-reference/invoice/v3.1.vendor.html](https://developer.concur.com/api-reference/invoice/v3.1.vendor.html)"
 		},
 		{
 			"name": "Payment Request (Invoice)",
@@ -376,9 +340,15 @@
 					"name": "Get Codes for Localized Strings",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
 						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/localizeddata?type=paymentStatus&langCode=en",
+							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/localizeddata?type=approvalStatus&langCode=en",
 							"protocol": "https",
 							"host": [
 								"{{dataCenterURI}}"
@@ -392,7 +362,7 @@
 							"query": [
 								{
 									"key": "type",
-									"value": "paymentStatus",
+									"value": "approvalStatus",
 									"description": "Valid types are - approvalStatus, paymentStatus, expenseType, ledgerCode, dataSourceCode, payMethod, receiptConfirmation, unitOfMeasure"
 								},
 								{
@@ -529,9 +499,8 @@
 						"header": [
 							{
 								"key": "Concur-CorrelationId",
-								"value": "152882e0-85ef-4d7f-abcd-829810bb0b5a",
-								"type": "text",
-								"disabled": true
+								"value": "{{$randomUUID}}",
+								"type": "text"
 							}
 						],
 						"body": {
