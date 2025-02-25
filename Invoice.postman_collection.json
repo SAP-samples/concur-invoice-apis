@@ -24,7 +24,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"Vendor\": [\r\n        {\r\n            \"VendorCode\": \"VEN007893\",\r\n            \"VendorName\": \"Test API Create\",\r\n            \"AddressCode\": \"ADDR01\",\r\n            \"Address1\": \"456 Sesame St\",\r\n            \"Address2\": \"\",\r\n            \"Address3\": \"\",\r\n            \"City\": \"New York\",\r\n            \"State\": \"NY\",\r\n            \"PostalCode\": \"10005\",\r\n            \"CountryCode\": \"US\",\r\n            \"Country\": \"UNITED STATES\",\r\n            \"Approved\": true,\r\n            \"PaymentTerms\": \"30\",\r\n            \"CurrencyCode\": \"USD\",\r\n            \"ContactEmail\": \"john.doe@test.com\",\r\n            \"ContactFirstName\": \"John\",\r\n            \"ContactLastName\": \"Doe\",\r\n            \"ContactPhoneNumber\": \"(123) 456-7890\",\r\n            \"DefaultExpenseTypeName\": \"Office Supplies\",\r\n            \"Custom1\": \"BU2\",\r\n            \"Custom2\": \"CC1\",\r\n            \"PaymentMethodType\": \"CLIENT\",\r\n            \"Custom3\": \"\",\r\n            \"Custom4\": \"\",\r\n            \"Custom5\": \"\",\r\n            \"Custom6\": \"\",\r\n            \"Custom7\": \"\",\r\n            \"Custom8\": \"\",\r\n            \"Custom9\": \"\",\r\n            \"Custom10\": \"\",\r\n            \"Custom11\": \"\",\r\n            \"Custom12\": \"\",\r\n            \"Custom13\": \"\",\r\n            \"Custom14\": \"\",\r\n            \"Custom15\": \"\",\r\n            \"Custom16\": \"\",\r\n            \"Custom17\": \"\",\r\n            \"Custom18\": \"\",\r\n            \"Custom19\": \"\",\r\n            \"Custom20\": \"\",\r\n            \"DefaultEmployeeID\": \"traveler\",\r\n            \"DiscountPercentage\": \"10\",\r\n            \"DiscountTermsDays\": \"15\",\r\n            \"ProvincialTaxID\": \"64500\",\r\n            \"PurchaseOrderContactEmail\": \"POContact@example.com\",\r\n            \"PurchaseOrderContactFirstName\": \"Example\",\r\n            \"PurchaseOrderContactLastName\": \"Contact\",\r\n            \"PurchaseOrderContactPhoneNumber\": \"123-456-7890\",\r\n            \"ShippingMethod\": \"USPSSTNDR\",\r\n            \"ShippingTerms\": \"FOB\",\r\n            \"StatusList\": \"\",\r\n            \"TaxID\": \"\",\r\n            \"TaxType\": \"\",\r\n            \"URI\": \"\",\r\n            \"VoucherNotes\": \"\"\r\n        }\r\n    ]\r\n}",
+							"raw": "{\r\n    \"Vendor\": [\r\n        {\r\n            \"VendorCode\": \"VEN007893\",\r\n            \"VendorName\": \"Test API Create\",\r\n            \"AddressCode\": \"ADDR01\",\r\n            \"Address1\": \"123 Sesame St\",\r\n            \"Address2\": \"\",\r\n            \"Address3\": \"\",\r\n            \"City\": \"New York\",\r\n            \"State\": \"NY\",\r\n            \"PostalCode\": \"10005\",\r\n            \"CountryCode\": \"US\",\r\n            \"Country\": \"UNITED STATES\",\r\n            \"Approved\": true,\r\n            \"PaymentTerms\": \"30\",\r\n            \"CurrencyCode\": \"USD\",\r\n            \"ContactEmail\": \"john.doe@test.com\",\r\n            \"ContactFirstName\": \"John\",\r\n            \"ContactLastName\": \"Doe\",\r\n            \"ContactPhoneNumber\": \"(123) 456-7890\",\r\n            \"DefaultExpenseTypeName\": \"Office Supplies\",\r\n            \"Custom1\": \"BU2\",\r\n            \"Custom2\": \"CC1\",\r\n            \"PaymentMethodType\": \"CLIENT\",\r\n            \"Custom3\": \"\",\r\n            \"Custom4\": \"\",\r\n            \"Custom5\": \"\",\r\n            \"Custom6\": \"\",\r\n            \"Custom7\": \"\",\r\n            \"Custom8\": \"\",\r\n            \"Custom9\": \"\",\r\n            \"Custom10\": \"\",\r\n            \"Custom11\": \"\",\r\n            \"Custom12\": \"\",\r\n            \"Custom13\": \"\",\r\n            \"Custom14\": \"\",\r\n            \"Custom15\": \"\",\r\n            \"Custom16\": \"\",\r\n            \"Custom17\": \"\",\r\n            \"Custom18\": \"\",\r\n            \"Custom19\": \"\",\r\n            \"Custom20\": \"\",\r\n            \"DefaultEmployeeID\": \"traveler\",\r\n            \"DiscountPercentage\": \"10\",\r\n            \"DiscountTermsDays\": \"15\",\r\n            \"ProvincialTaxID\": \"64500\",\r\n            \"PurchaseOrderContactEmail\": \"POContact@example.com\",\r\n            \"PurchaseOrderContactFirstName\": \"Example\",\r\n            \"PurchaseOrderContactLastName\": \"Contact\",\r\n            \"PurchaseOrderContactPhoneNumber\": \"123-456-7890\",\r\n            \"ShippingMethod\": \"USPSSTNDR\",\r\n            \"ShippingTerms\": \"FOB\",\r\n            \"StatusList\": \"\",\r\n            \"TaxID\": \"\",\r\n            \"TaxType\": \"\",\r\n            \"URI\": \"\",\r\n            \"VoucherNotes\": \"\"\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -332,6 +332,346 @@
 				}
 			],
 			"description": "This provides an overview of managing vendors. The complete documentation can be found here: [https://developer.concur.com/api-reference/invoice/v3.1.vendor.html](https://developer.concur.com/api-reference/invoice/v3.1.vendor.html)"
+		},
+		{
+			"name": "Purchase Request",
+			"item": [
+				{
+					"name": "Get Codes for Localized Strings",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/localizeddata?type=expenseType&langCode=en",
+							"protocol": "https",
+							"host": [
+								"{{dataCenterURI}}"
+							],
+							"path": [
+								"api",
+								"v3.0",
+								"invoice",
+								"localizeddata"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "expenseType",
+									"description": "Valid types are - approvalStatus, paymentStatus, expenseType, ledgerCode, dataSourceCode, payMethod, receiptConfirmation, unitOfMeasure"
+								},
+								{
+									"key": "langCode",
+									"value": "en"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Purchase Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.collectionVariables.set(\"requestId\", pm.response.json().id);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Concur-CorrelationId",
+								"value": "{{$randomUUID}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"description\": \"Supplies to catch the Roadrunner\",\n  \"userLoginId\": \"wile.e.coyote@mcsandbox.us2.uat\",\n  \"policyExternalId\": \"PRPO\",\n  \"currencyCode\": \"USD\",\n  \"notesToSupplier\": \"Ship ASAP\",\n  \"comments\": \"I'll get him this time\",\n  \"shipToAddressCode\": \"SAND\",\n  \"billToAddressCode\": \"SAND\",\n  \"lineItems\": [\n    {\n      \"purchaseType\": \"GOODS\",\n      \"vendorCode\": \"VEN_ACME\",\n      \"vendorAddressCode\": \"ADDR01\",\n      \"description\": \"anvil\",\n      \"quantity\": \"2\",\n      \"unitPrice\": \"250.00\",\n      \"expenseType\": \"OFFSUPL\",\n      \"receiptType\": \"QUANTITY_RECEIPT\",\n      \"neededByDate\": \"2025-03-01\",\n      \"uomCode\": \"EACH\",\n      \"custom1\": \"BU2\",\n      \"custom2\": \"CC1\",\n      \"shipping\": \"100.00\",\n      \"tax\": \"35.00\",\n      \"supplierPartId\": \"12345\",\n      \"url\": [\n        \"http://acme.looneytunes/anvil\"\n      ],\n      \"notesToVendor\": \"\",\n      \"comments\": \"for dropping\"\n    },\n    {\n      \"purchaseType\": \"GOODS\",\n      \"vendorCode\": \"VEN_ACME\",\n      \"vendorAddressCode\": \"ADDR01\",\n      \"description\": \"Giant Rubber Band\",\n      \"quantity\": \"2\",\n      \"unitPrice\": \"50.00\",\n      \"expenseType\": \"OFFSUPL\",\n      \"receiptType\": \"QUANTITY_RECEIPT\",\n      \"neededByDate\": \"2025-03-01\",\n      \"uomCode\": \"EACH\",\n      \"custom1\": \"BU2\",\n      \"custom2\": \"CC2\",\n      \"shipping\": \"15.00\",\n      \"tax\": \"10.00\",\n      \"supplierPartId\": \"67890\",\n      \"url\": [\n        \"http://acme.looneytunes/band\"\n      ],\n      \"notesToVendor\": \"blue color if available\",\n      \"comments\": \"to launch myself\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{dataCenterURI}}/purchaserequest/v4/purchaserequests",
+							"protocol": "https",
+							"host": [
+								"{{dataCenterURI}}"
+							],
+							"path": [
+								"purchaserequest",
+								"v4",
+								"purchaserequests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Purchase Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{dataCenterURI}}/purchaserequest/v4/purchaserequests/2f7e2cc5-b500-4346-a5ae-1d2c363ab942?mode=COMPACT",
+							"protocol": "https",
+							"host": [
+								"{{dataCenterURI}}"
+							],
+							"path": [
+								"purchaserequest",
+								"v4",
+								"purchaserequests",
+								"2f7e2cc5-b500-4346-a5ae-1d2c363ab942"
+							],
+							"query": [
+								{
+									"key": "mode",
+									"value": "COMPACT"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Purchase Order - PO",
+			"item": [
+				{
+					"name": "Create PO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Concur-CorrelationId",
+								"value": "t1200339lpr6-POcreatev1.1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"BillToAddress\": {\n    \"Address1\": \"1234 Sesame St\",\n    \"Address2\": \"\",\n    \"Address3\": \"\",\n    \"City\": \"New York\",\n    \"CountryCode\": \"US\",\n    \"ExternalID\": \"SAND\",\n    \"Name\": \"Sandbox\",\n    \"PostalCode\": \"01234\",\n    \"StateProvince\": \"NY\"\n  },\n  \"CurrencyCode\": \"USD\",\n  \"OrderDate\": \"2024-01-31\",\n  \"ID\": \"API101\",\n  \"IsChangeOrder\": \"false\",\n  \"LedgerCode\": \"DEFAULT\",\n  \"LineItem\": [\n    {\n      \"Allocation\": [\n        {\n          \"Amount\": \"25.00\",\n          \"Percentage\": \"50.00000000\",\n          \"GrossAmount\": \"25.00\",\n          \"custom1\": \"BU1\",\n          \"custom2\": \"CC1\"\n        },\n        {\n          \"Amount\": \"25.00\",\n          \"Percentage\": \"50.00000000\",\n          \"GrossAmount\": \"25.00\",\n          \"custom1\": \"BU1\",\n          \"custom2\": \"CC2\"\n        }\n      ],\n      \"CreateDate\": \"2024-01-31\",\n      \"Description\": \"line 1\",\n      \"ExpenseType\": \"Catering\",\n      \"ExternalID\": \"API101line1\",\n      \"IsReceiptRequired\": \"false\",\n      \"LineNumber\": \"1\",\n      \"PurchaseOrderReceiptType\": \"NONE\",\n      \"Quantity\": \"2.00\",\n      \"UnitOfMeasureCode\": \"EACH\",\n      \"UnitPrice\": \"50.00\"\n    }\n  ],\n  \"Name\": \"Test API v1.1\",\n  \"PolicyExternalID\": \"PO\",\n  \"PurchaseOrderNumber\": \"API101\",\n  \"PurchaseRequestNumber\": \"100001\",\n  \"RequestedBy\": \"Traveler, Traveler\",\n  \"Shipping\": \"0.00000000\",\n  \"ShipToAddress\": {\n    \"Address1\": \"1234 Sesame St\",\n    \"Address2\": \"\",\n    \"Address3\": \"\",\n    \"City\": \"New York\",\n    \"CountryCode\": \"US\",\n    \"ExternalID\": \"SAND\",\n    \"Name\": \"Sandbox\",\n    \"PostalCode\": \"01234\",\n    \"StateProvince\": \"NY\"\n  },\n  \"Status\": \"Transmitted\",\n  \"Tax\": \"0.00000000\",\n  \"URI\": \"http://www.concursolutions.com/api/v3.0/invoice/purchaseorders/purchaseorders/API101\",\n  \"VendorCode\": \"VEN0002\",\n  \"VendorAddressCode\": \"ADDR01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorders",
+							"protocol": "https",
+							"host": [
+								"{{dataCenterURI}}"
+							],
+							"path": [
+								"api",
+								"v3.0",
+								"invoice",
+								"purchaseorders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create PO - No Alloc",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Concur-CorrelationId",
+								"value": "t1200339lpr6-POcreatev1.1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"BillToAddress\": {\n    \"Address1\": \"1234 Sesame St\",\n    \"Address2\": \"\",\n    \"Address3\": \"\",\n    \"City\": \"New York\",\n    \"CountryCode\": \"US\",\n    \"ExternalID\": \"SAND\",\n    \"Name\": \"Sandbox\",\n    \"PostalCode\": \"01234\",\n    \"StateProvince\": \"NY\"\n  },\n  \"CurrencyCode\": \"USD\",\n  \"OrderDate\": \"2024-01-31\",\n  \"ID\": \"API103\",\n  \"IsChangeOrder\": \"false\",\n  \"LedgerCode\": \"DEFAULT\",\n  \"LineItem\": [\n    {\n      \"CreateDate\": \"2024-01-31\",\n      \"Description\": \"line 1\",\n      \"ExpenseType\": \"Catering\",\n      \"ExternalID\": \"API103line1\",\n      \"IsReceiptRequired\": \"false\",\n      \"LineNumber\": \"1\",\n      \"PurchaseOrderReceiptType\": \"NONE\",\n      \"Quantity\": \"2.00\",\n      \"UnitOfMeasureCode\": \"EACH\",\n      \"UnitPrice\": \"50.00\"\n    }\n  ],\n  \"Name\": \"Test API v1.1\",\n  \"PolicyExternalID\": \"PO\",\n  \"PurchaseOrderNumber\": \"API103\",\n  \"PurchaseRequestNumber\": \"100001\",\n  \"RequestedBy\": \"Traveler, Traveler\",\n  \"Shipping\": \"0.00000000\",\n  \"ShipToAddress\": {\n    \"Address1\": \"1234 Sesame St\",\n    \"Address2\": \"\",\n    \"Address3\": \"\",\n    \"City\": \"New York\",\n    \"CountryCode\": \"US\",\n    \"ExternalID\": \"SAND\",\n    \"Name\": \"Sandbox\",\n    \"PostalCode\": \"01234\",\n    \"StateProvince\": \"NY\"\n  },\n  \"Status\": \"Transmitted\",\n  \"Tax\": \"0.00000000\",\n  \"URI\": \"http://www.concursolutions.com/api/v3.0/invoice/purchaseorders/purchaseorders/API103\",\n  \"VendorCode\": \"VEN0002\",\n  \"VendorAddressCode\": \"ADDR01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorders",
+							"protocol": "https",
+							"host": [
+								"{{dataCenterURI}}"
+							],
+							"path": [
+								"api",
+								"v3.0",
+								"invoice",
+								"purchaseorders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get PO",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorders/1",
+							"protocol": "https",
+							"host": [
+								"{{dataCenterURI}}"
+							],
+							"path": [
+								"api",
+								"v3.0",
+								"invoice",
+								"purchaseorders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create PO Receipt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Deleted\": \"false\",\r\n  \"DeliverySlipNumber\": \"DSN1\",\r\n  \"GoodsReceiptNumber\": \"RCPT4\",\r\n  \"ID\": \"1000002\",\r\n  \"LineItemExternalID\": \"1\",\r\n  \"PurchaseOrderNumber\": \"1\",\r\n  \"ReceivedDate\": \"2024-02-19\",\r\n  \"ReceivedQuantity\": \"2\",\r\n  \"UnitOfMeasureCode\": \"EA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorderreceipts",
+							"protocol": "https",
+							"host": [
+								"{{dataCenterURI}}"
+							],
+							"path": [
+								"api",
+								"v3.0",
+								"invoice",
+								"purchaseorderreceipts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update PO Receipt",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"Deleted\": \"false\",\r\n  \"DeliverySlipNumber\": \"DSN1\",\r\n  \"GoodsReceiptNumber\": \"RCPT4\",\r\n  \"ID\": \"1000001\",\r\n  \"LineItemExternalID\": \"1\",\r\n  \"PurchaseOrderNumber\": \"1\",\r\n  \"ReceivedDate\": \"2024-02-19\",\r\n  \"ReceivedQuantity\": \"0\",\r\n  \"UnitOfMeasureCode\": \"EA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorderreceipts",
+							"protocol": "https",
+							"host": [
+								"{{dataCenterURI}}"
+							],
+							"path": [
+								"api",
+								"v3.0",
+								"invoice",
+								"purchaseorderreceipts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get PO Receipt",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorderreceipts?purchaseOrderNumber=1",
+							"protocol": "https",
+							"host": [
+								"{{dataCenterURI}}"
+							],
+							"path": [
+								"api",
+								"v3.0",
+								"invoice",
+								"purchaseorderreceipts"
+							],
+							"query": [
+								{
+									"key": "lineItemExternalID",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "goodsReceiptNumber",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "purchaseOrderNumber",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		},
 		{
 			"name": "Payment Request (Invoice)",
@@ -698,291 +1038,6 @@
 					"response": []
 				}
 			]
-		},
-		{
-			"name": "Purchase Request",
-			"item": [
-				{
-					"name": "Create Purchase Request",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Concur-CorrelationId",
-								"value": "t1200339lpr6-PRcreatev3.1-Bruno",
-								"type": "default"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"description\": \"New office supplies v5\",\n  \"userLoginId\": \"traveler@mcsandbox.us2.uat\",\n  \"policyExternalId\": \"PRPO\",\n  \"currencyCode\": \"USD\",\n  \"notesToSupplier\": \"testing notes to supplier v5\",\n  \"comments\": \"testing comments v5\",\n  \"shipToAddressCode\": \"SAND\",\n  \"billToAddressCode\": \"SAND\",\n  \"lineItems\": [\n    {\n      \"purchaseType\": \"GOODS\",\n      \"vendorCode\": \"VEN0002\",\n      \"vendorAddressCode\": \"ADDR01\",\n      \"description\": \"cables\",\n      \"quantity\": \"2\",\n      \"unitPrice\": \"25.00\",\n      \"expenseType\": \"OFFSUPL\",\n      \"receiptType\": \"NONE\",\n      \"neededByDate\": \"2024-02-12\",\n      \"uomCode\": \"EACH\",\n      \"shipping\": \"0\",\n      \"tax\": \"0\",\n      \"supplierPartId\": \"12345\",\n      \"url\": [\n        \"http://homedepot.com/cable\"\n      ],\n      \"notesToVendor\": \"request cable\",\n      \"comments\": \"request for new employees for cable\"\n    }\n  ]\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://{{dataCenterURI}}/purchaserequest/v4/purchaserequests",
-							"protocol": "https",
-							"host": [
-								"{{dataCenterURI}}"
-							],
-							"path": [
-								"purchaserequest",
-								"v4",
-								"purchaserequests"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Purchase Request",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://{{dataCenterURI}}/purchaserequest/v4/purchaserequests/2f7e2cc5-b500-4346-a5ae-1d2c363ab942?mode=COMPACT",
-							"protocol": "https",
-							"host": [
-								"{{dataCenterURI}}"
-							],
-							"path": [
-								"purchaserequest",
-								"v4",
-								"purchaserequests",
-								"2f7e2cc5-b500-4346-a5ae-1d2c363ab942"
-							],
-							"query": [
-								{
-									"key": "mode",
-									"value": "COMPACT"
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Purchase Order - PO",
-			"item": [
-				{
-					"name": "Create PO",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Concur-CorrelationId",
-								"value": "t1200339lpr6-POcreatev1.1",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"BillToAddress\": {\n    \"Address1\": \"1234 Sesame St\",\n    \"Address2\": \"\",\n    \"Address3\": \"\",\n    \"City\": \"New York\",\n    \"CountryCode\": \"US\",\n    \"ExternalID\": \"SAND\",\n    \"Name\": \"Sandbox\",\n    \"PostalCode\": \"01234\",\n    \"StateProvince\": \"NY\"\n  },\n  \"CurrencyCode\": \"USD\",\n  \"OrderDate\": \"2024-01-31\",\n  \"ID\": \"API101\",\n  \"IsChangeOrder\": \"false\",\n  \"LedgerCode\": \"DEFAULT\",\n  \"LineItem\": [\n    {\n      \"Allocation\": [\n        {\n          \"Amount\": \"25.00\",\n          \"Percentage\": \"50.00000000\",\n          \"GrossAmount\": \"25.00\",\n          \"custom1\": \"BU1\",\n          \"custom2\": \"CC1\"\n        },\n        {\n          \"Amount\": \"25.00\",\n          \"Percentage\": \"50.00000000\",\n          \"GrossAmount\": \"25.00\",\n          \"custom1\": \"BU1\",\n          \"custom2\": \"CC2\"\n        }\n      ],\n      \"CreateDate\": \"2024-01-31\",\n      \"Description\": \"line 1\",\n      \"ExpenseType\": \"Catering\",\n      \"ExternalID\": \"API101line1\",\n      \"IsReceiptRequired\": \"false\",\n      \"LineNumber\": \"1\",\n      \"PurchaseOrderReceiptType\": \"NONE\",\n      \"Quantity\": \"2.00\",\n      \"UnitOfMeasureCode\": \"EACH\",\n      \"UnitPrice\": \"50.00\"\n    }\n  ],\n  \"Name\": \"Test API v1.1\",\n  \"PolicyExternalID\": \"PO\",\n  \"PurchaseOrderNumber\": \"API101\",\n  \"PurchaseRequestNumber\": \"100001\",\n  \"RequestedBy\": \"Traveler, Traveler\",\n  \"Shipping\": \"0.00000000\",\n  \"ShipToAddress\": {\n    \"Address1\": \"1234 Sesame St\",\n    \"Address2\": \"\",\n    \"Address3\": \"\",\n    \"City\": \"New York\",\n    \"CountryCode\": \"US\",\n    \"ExternalID\": \"SAND\",\n    \"Name\": \"Sandbox\",\n    \"PostalCode\": \"01234\",\n    \"StateProvince\": \"NY\"\n  },\n  \"Status\": \"Transmitted\",\n  \"Tax\": \"0.00000000\",\n  \"URI\": \"http://www.concursolutions.com/api/v3.0/invoice/purchaseorders/purchaseorders/API101\",\n  \"VendorCode\": \"VEN0002\",\n  \"VendorAddressCode\": \"ADDR01\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorders",
-							"protocol": "https",
-							"host": [
-								"{{dataCenterURI}}"
-							],
-							"path": [
-								"api",
-								"v3.0",
-								"invoice",
-								"purchaseorders"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create PO - No Alloc",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Concur-CorrelationId",
-								"value": "t1200339lpr6-POcreatev1.1",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"BillToAddress\": {\n    \"Address1\": \"1234 Sesame St\",\n    \"Address2\": \"\",\n    \"Address3\": \"\",\n    \"City\": \"New York\",\n    \"CountryCode\": \"US\",\n    \"ExternalID\": \"SAND\",\n    \"Name\": \"Sandbox\",\n    \"PostalCode\": \"01234\",\n    \"StateProvince\": \"NY\"\n  },\n  \"CurrencyCode\": \"USD\",\n  \"OrderDate\": \"2024-01-31\",\n  \"ID\": \"API103\",\n  \"IsChangeOrder\": \"false\",\n  \"LedgerCode\": \"DEFAULT\",\n  \"LineItem\": [\n    {\n      \"CreateDate\": \"2024-01-31\",\n      \"Description\": \"line 1\",\n      \"ExpenseType\": \"Catering\",\n      \"ExternalID\": \"API103line1\",\n      \"IsReceiptRequired\": \"false\",\n      \"LineNumber\": \"1\",\n      \"PurchaseOrderReceiptType\": \"NONE\",\n      \"Quantity\": \"2.00\",\n      \"UnitOfMeasureCode\": \"EACH\",\n      \"UnitPrice\": \"50.00\"\n    }\n  ],\n  \"Name\": \"Test API v1.1\",\n  \"PolicyExternalID\": \"PO\",\n  \"PurchaseOrderNumber\": \"API103\",\n  \"PurchaseRequestNumber\": \"100001\",\n  \"RequestedBy\": \"Traveler, Traveler\",\n  \"Shipping\": \"0.00000000\",\n  \"ShipToAddress\": {\n    \"Address1\": \"1234 Sesame St\",\n    \"Address2\": \"\",\n    \"Address3\": \"\",\n    \"City\": \"New York\",\n    \"CountryCode\": \"US\",\n    \"ExternalID\": \"SAND\",\n    \"Name\": \"Sandbox\",\n    \"PostalCode\": \"01234\",\n    \"StateProvince\": \"NY\"\n  },\n  \"Status\": \"Transmitted\",\n  \"Tax\": \"0.00000000\",\n  \"URI\": \"http://www.concursolutions.com/api/v3.0/invoice/purchaseorders/purchaseorders/API103\",\n  \"VendorCode\": \"VEN0002\",\n  \"VendorAddressCode\": \"ADDR01\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorders",
-							"protocol": "https",
-							"host": [
-								"{{dataCenterURI}}"
-							],
-							"path": [
-								"api",
-								"v3.0",
-								"invoice",
-								"purchaseorders"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get PO",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {
-							"accept": true
-						}
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorders/1",
-							"protocol": "https",
-							"host": [
-								"{{dataCenterURI}}"
-							],
-							"path": [
-								"api",
-								"v3.0",
-								"invoice",
-								"purchaseorders",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create PO Receipt",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"Deleted\": \"false\",\r\n  \"DeliverySlipNumber\": \"DSN1\",\r\n  \"GoodsReceiptNumber\": \"RCPT4\",\r\n  \"ID\": \"1000002\",\r\n  \"LineItemExternalID\": \"1\",\r\n  \"PurchaseOrderNumber\": \"1\",\r\n  \"ReceivedDate\": \"2024-02-19\",\r\n  \"ReceivedQuantity\": \"2\",\r\n  \"UnitOfMeasureCode\": \"EA\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorderreceipts",
-							"protocol": "https",
-							"host": [
-								"{{dataCenterURI}}"
-							],
-							"path": [
-								"api",
-								"v3.0",
-								"invoice",
-								"purchaseorderreceipts"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update PO Receipt",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"Deleted\": \"false\",\r\n  \"DeliverySlipNumber\": \"DSN1\",\r\n  \"GoodsReceiptNumber\": \"RCPT4\",\r\n  \"ID\": \"1000001\",\r\n  \"LineItemExternalID\": \"1\",\r\n  \"PurchaseOrderNumber\": \"1\",\r\n  \"ReceivedDate\": \"2024-02-19\",\r\n  \"ReceivedQuantity\": \"0\",\r\n  \"UnitOfMeasureCode\": \"EA\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorderreceipts",
-							"protocol": "https",
-							"host": [
-								"{{dataCenterURI}}"
-							],
-							"path": [
-								"api",
-								"v3.0",
-								"invoice",
-								"purchaseorderreceipts"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get PO Receipt",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {
-							"accept": true
-						}
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "https://{{dataCenterURI}}/api/v3.0/invoice/purchaseorderreceipts?purchaseOrderNumber=1",
-							"protocol": "https",
-							"host": [
-								"{{dataCenterURI}}"
-							],
-							"path": [
-								"api",
-								"v3.0",
-								"invoice",
-								"purchaseorderreceipts"
-							],
-							"query": [
-								{
-									"key": "lineItemExternalID",
-									"value": "",
-									"disabled": true
-								},
-								{
-									"key": "goodsReceiptNumber",
-									"value": "",
-									"disabled": true
-								},
-								{
-									"key": "purchaseOrderNumber",
-									"value": "1"
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
 		}
 	],
 	"auth": {
@@ -1029,6 +1084,11 @@
 		{
 			"key": "addressCode",
 			"value": "Vendor Address Code",
+			"type": "string"
+		},
+		{
+			"key": "requestId",
+			"value": "Purchase Request ID",
 			"type": "string"
 		}
 	]
