@@ -1,5 +1,5 @@
 # SAP Concur Client Web Services - Invoice APIs
-<!-- Please include descriptive title -->
+<!-- Please include descriptive  title -->
 
 
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/concur-invoice-apis)](https://api.reuse.software/info/github.com/SAP-samples/concur-invoice-apis)
@@ -23,7 +23,7 @@ In order to use this repository you will need:
 No known issues.
 
 ## How to obtain support
-This project is provided "as-is", with no expected changes or support.
+This project is provided "as-is", with no expected changes or support. 
 The complete Invoice API documentation [can be found here](https://developer.concur.com/api-reference/invoice/v3.payment-request.html).
  
 For additional support, please [ask a question in SAP Community](https://answers.sap.com/questions/ask.html).
